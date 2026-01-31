@@ -14,7 +14,7 @@ Wait times are broken down at each crossing by lane type, including Standard, Se
   - 🚗 Passenger Vehicles
   - 🚛 Commercial Vehicles
   - 🚶 Pedestrians
-- **Supported Lanes** — Standard, Ready Lane, FAST, NEXUS, SENTRI, and more
+- **Supported Lanes** — Standard, Ready, FAST, NEXUS SENTRI
 - **24/7 Availability** — Data is updated around the clock
 
 ## Data Source
