@@ -47,16 +47,27 @@ android {
 dependencies {
     //Hilt
     implementation(libs.hilt.android)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     ksp(libs.hilt.android.compiler)
 
     //Retrofit
     implementation(libs.retrofit)
 
     //TikXml
-    implementation(libs.annotation)
-    implementation(libs.core)
+    implementation(libs.tikXml.annotation)
+    implementation(libs.tikXml.core)
     implementation(libs.retrofit.converter)
-    kapt(libs.processor)
+    kapt(libs.tikXml.processor)
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:5.3.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.3.2")
+
+    //ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    //activity
+    implementation(libs.androidx.activity.ktx)
 
 
     implementation(libs.androidx.core.ktx)
