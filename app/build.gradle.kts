@@ -19,7 +19,7 @@ android {
         minSdk = 29
         targetSdk = 36
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -60,15 +60,16 @@ dependencies {
     implementation(libs.retrofit.converter)
     kapt(libs.tikXml.processor)
 
-    //OkHttp
-    implementation("com.squareup.okhttp3:okhttp:5.3.2")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.3.2")
-
     //ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     //activity
     implementation(libs.androidx.activity.ktx)
 
+    //Testing
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.mockwebserver)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

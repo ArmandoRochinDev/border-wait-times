@@ -1,6 +1,10 @@
 [versions]
 agp = "9.0.0"
+kotlinTest = "2.0.21"
+kotlinxCoroutinesTest = "1.10.2"
 lifecycleViewmodelKtx = "2.10.0"
+mockitoKotlin = "6.2.3"
+mockwebserver = "5.3.2"
 tikXml = "0.8.13"
 hiltAndroidCompiler = "2.59.1"
 kotlin = "2.3.10"
@@ -22,9 +26,13 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlinTest" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "mockwebserver" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-converter = { module = "com.tickaroo.tikxml:retrofit-converter", version.ref = "tikXml" }
 tikXml-annotation = { module = "com.tickaroo.tikxml:annotation", version.ref = "tikXml" }
