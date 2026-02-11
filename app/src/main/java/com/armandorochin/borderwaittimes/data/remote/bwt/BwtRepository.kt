@@ -9,6 +9,8 @@ class BwtRepository @Inject constructor(
     private val bwtApi: BwtApi
 ) {
 
+    //TODO: local implementation with room.
+
     suspend fun fetchBwtFromServer() : Result<BorderWaitTime> = withContext(IO) {
         try {
             val response = bwtApi.getBwtDataFromServer().execute()
